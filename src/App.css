@@ -1,38 +1,121 @@
-.App {
+body{
+  background-color: #242424;
+  color: #fff;
+}
+.app-header {
+  background-color: transparent;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.tab-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.tab-item {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #888;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-item.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.content {
+  padding: 20px;
+}
+
+.counter,
+.settings {
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.counter h1 {
+  font-size: 3rem;
+  font-weight: bolder;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter div {
+  text-align: center; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.counter div button {
+  margin: 10px auto 0; 
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  display: inline-block; 
+  transition: 0.5s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.about {
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.about h1,
+span,
+p {
+  text-align: center;
+}
+.about .about{
+  margin-top: 5% !important;
+  text-align: center;
+}
+.settings h1{
+  text-align: center;
+}
+.settings div {
+  text-align: center;
+  margin-top: 40px;
+}
+.settings label {
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: inline-block;
+  transition: 0.5s ease-in-out;
 }
-
-.App-link {
-  color: #61dafb;
+.settings label input {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  margin-bottom: 20px;
+  padding: 12px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.settings div p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+.settings div button{
+  margin: 10px auto 0; 
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  display: inline-block; 
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  max-width: 200px;
 }
